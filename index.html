@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>NumberOne WebShop</title>
+</head>
+<body>
+    <header>
+        <h1 class="display-1">NumberOne WebShop</h1>
+        <a href="admin.html" class="link-dark">Administration</a>
+    
+        <a href="register.html" class="link-dark">Register</a>
+    </header>
+    <br><br>
+    
+        <label for="category">Choose category:</label><br>
+        <select name="category" id="category" onchange="chooseCategory()">
+            <option value="All" selected>All</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Jewelery">Jewelery</option>
+            <option value="Men's clothing" >Men's clothing</option>
+            <option value="Women's clothing" >Women's clothing</option>    
+        </select>
+
+    
+    <main>
+    <section id="allproducts"></section>
+    <section id="electronics"></section>
+    <section id="jewelery"></section>
+    <section id="men"></section>
+    <section id="women"></section>
+    </main>
+    <a href="index.html#top" id="toTop" class="link-dark"><b>Till toppen</b></a>
+    <footer>
+        <p>Copyright 2023</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
