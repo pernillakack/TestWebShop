@@ -26,7 +26,7 @@ function showAllProducts(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>€ = '${items.price}'</h5><br>
+        <h5 class= price>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
@@ -40,7 +40,7 @@ function chooseCategory(){
 
     switch(choice) {
         case "Electronics":
-            fetch("http://localhost:8080/products/category/electronics")
+            fetch("http://localhost:8080/products")
             .then(res=> res.json())
             .then(data=> showElectronics(data));
             itemEl.classList.add("hide");
@@ -50,7 +50,7 @@ function chooseCategory(){
             electronicsEl.classList.remove("hide");    
         break;
         case "Jewelery":
-            fetch("http://localhost:8080/products/category/jewelery")
+            fetch("http://localhost:8080/products")
             .then(res=> res.json())
             .then(data=> showJewelery(data));
             itemEl.classList.add("hide");
@@ -60,7 +60,7 @@ function chooseCategory(){
             jeweleryEl.classList.remove("hide"); 
         break;
         case "Men's clothing":
-            fetch("http://localhost:8080/products/category/men's clothing")
+            fetch("http://localhost:8080/products")
             .then(res=> res.json())
             .then(data=> showMen(data));
             itemEl.classList.add("hide");
@@ -70,7 +70,7 @@ function chooseCategory(){
             menEl.classList.remove("hide");  
             break;
         case "Women's clothing":
-            fetch("http://localhost:8080/products/category/women's clothing")
+            fetch("http://localhost:8080/products")
             .then(res=> res.json())
             .then(data=> showWomen(data));
             itemEl.classList.add("hide");
