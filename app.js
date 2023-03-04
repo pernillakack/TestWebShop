@@ -26,12 +26,11 @@ function showAllProducts(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>Rating: '${items.rating.rate}' Count: '${items.rating.count}'</h5><br>
-        <h6>€ = '${items.price}'</h6><br>
+        <h5>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
-    
+    console.log(items.title);
 }
 }
 //väljer kategori
@@ -98,8 +97,7 @@ function showElectronics(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>Rating: '${items.rating.rate}' Count: '${items.rating.count}'</h5>
-        <h6>€ = '${items.price}'</h6><br>
+        <h5>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
@@ -116,8 +114,7 @@ function showJewelery(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>Rating: '${items.rating.rate}' Count: '${items.rating.count}'</h5>
-        <h6>€ = '${items.price}'</h6><br>
+        <h5>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
@@ -133,8 +130,7 @@ function showMen(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>Rating: '${items.rating.rate}' Count: '${items.rating.count}'</h5>
-        <h6>€ = '${items.price}'</h6><br>
+        <h5>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
@@ -150,8 +146,7 @@ function showWomen(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5>Rating: '${items.rating.rate}' Count: '${items.rating.count}'</h5>
-        <h6>€ = '${items.price}'</h6><br>
+        <h5>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
