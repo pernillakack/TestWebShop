@@ -26,7 +26,7 @@ function showAllProducts(products) {
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
         <h4>'${items.description}'</h4><br>
-        <h5 class= price>€ = '${items.price}'</h5><br>
+        <h5 class='${items.id}'>€ = '${items.price}'</h5><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
