@@ -22,11 +22,11 @@ function showAllProducts(products) {
     for(const items of products) {
         itemEl.innerHTML += `
         <article id='item'>
-        <h3>'${items.title}'<br>'${items.category}'</h3><br>
+        <h3>'${items.title}'</h3><br><h4>'${items.category}'</h4><br>
         <p><i>Article nr: '${items.id}'</i></p><br>
         <img src='${items.image}'style='width:30%'><br>
-        <h4>'${items.description}'</h4><br>
-        <h5 class='${items.id}'>€ = '${items.price}'</h5><br>
+        <h5>'${items.description}'</h5><br>
+        <h6 id=${items.id}'>€ = '${items.price}'</h6><br>
         <input type='button' id='buyButton' class='btn btn-secondary' value='Buy' onclick='buyProduct("${items.id}","${items.title.replace("'", "")}")'>
         </article><hr>
         `
